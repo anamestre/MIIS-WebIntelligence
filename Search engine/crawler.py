@@ -30,15 +30,12 @@ def crawl_page(url):
 
 
         rp = urllib.robotparser.RobotFileParser() #https://docs.python.org/3/library/urllib.robotparser.html
-        #rp.set_url(act)
-        #rp.read()
+        rp.set_url(act)
+        rp.read()
         rrate=rp.can_fetch("*",act)
-        page = requests.get(act)
-        soup = BeautifulSoup(page.content, 'html.parser')
-        print("aaact " + act + " " + str(rrate))
+        print("web: " + act + " " + str(rrate))
 
         if rrate:
-            print("webbb: " + act)
             page = requests.get(act)
             soup = BeautifulSoup(page.content, 'html.parser')
 
@@ -46,12 +43,12 @@ def crawl_page(url):
             f.write(str(soup))
             f.close()
         
-        if(i == 10):
-            return
-        for link in soup.findAll('a', attrs={'href': re.compile("^http") }):
-            urls_to_check.append(link.get('href'))
+            if(i == 10):
+                return
+            for link in soup.findAll('a', attrs={'href': re.compile("^http") }):
+                urls_to_check.append(link.get('href'))
 
 
-crawl_page("https://www.pornhub.com")
+crawl_page("https://www.upf.edu")
         
         
