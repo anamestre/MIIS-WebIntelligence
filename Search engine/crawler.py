@@ -30,8 +30,8 @@ def crawl_page(url):
 
 
         rp = urllib.robotparser.RobotFileParser() #https://docs.python.org/3/library/urllib.robotparser.html
-        rp.set_url(act)
-        rp.read()
+        #rp.set_url(act)
+        #rp.read()
         rrate=rp.can_fetch("*",act)
 
         if rrate:
