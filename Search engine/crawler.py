@@ -33,8 +33,12 @@ def crawl_page(url):
         #rp.set_url(act)
         #rp.read()
         rrate=rp.can_fetch("*",act)
+        page = requests.get(act)
+        soup = BeautifulSoup(page.content, 'html.parser')
+        print("aaact " + act + " " + str(rrate))
 
         if rrate:
+            print("webbb: " + act)
             page = requests.get(act)
             soup = BeautifulSoup(page.content, 'html.parser')
 
@@ -48,6 +52,6 @@ def crawl_page(url):
             urls_to_check.append(link.get('href'))
 
 
-crawl_page("https://www.orthanc-server.com")
+crawl_page("https://www.pornhub.com")
         
         
