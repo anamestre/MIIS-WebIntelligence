@@ -8,6 +8,7 @@ from bs4 import BeautifulSoup
 import requests, re
 import urllib.robotparser
 from tld import get_tld
+import time
 
 
 def crawl_page(url):
@@ -54,11 +55,13 @@ def crawl_page(url):
                 f.write(str(soup))
                 f.close()
 
-                if(i == 100):
+                if(i == 10):
                     return
                 for link in soup.findAll('a', attrs={'href': re.compile("^http") }):
                     urls_to_check.append(link.get('href'))
 
-crawl_page("https://es.wikipedia.org/wiki/Game_of_Thrones")
+start_time = time.time()
+crawl_page("https://upf.edu")
+print("--- %s seconds ---" % (time.time() - start_time))
         
         
