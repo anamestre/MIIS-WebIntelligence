@@ -45,7 +45,7 @@ public class SearchEngine
         }
 
         // Build index
-        DocumentProcessor docProcessor = new SimpleProcessor();
+        DocumentProcessor docProcessor = new HtmlProcessor(pathToStopWords);
         Indexer indexer = new Indexer(pathToIndex, pathToCollection, docProcessor);
         indexer.run();
 
@@ -60,12 +60,13 @@ public class SearchEngine
      */
     protected static void doBatch(String[] args) throws Exception
     {
-        if (args.length != 3) {
+        if (args.length < 3) {
             SearchEngine.printUsage();
             System.exit(1);
         }
         File pathToIndex = new File(args[1]);
         File pathToQueries = new File(args[2]);
+        File pathToStopWords = new File("stop-words.txt");
 
         // Check console arguments
         if (!pathToIndex.exists() || pathToIndex.isFile()) {
@@ -85,7 +86,7 @@ public class SearchEngine
         ind.printStatistics();
 
         // Instantiate retriever and run
-        DocumentProcessor docProcessor = new SimpleProcessor();
+        DocumentProcessor docProcessor = new HtmlProcessor(pathToStopWords); // TODO
         RetrievalModel cosine = new Cosine();
         Batch batch = new Batch(pathToQueries, cosine, ind, docProcessor);
         batch.run();
@@ -104,6 +105,7 @@ public class SearchEngine
             System.exit(1);
         }
         File pathToIndex = new File(args[1]);
+        File pathToStopWords = new File("stop-words.txt");
 
         // Check console arguments
         if (!pathToIndex.exists() || pathToIndex.isFile()) {
@@ -119,7 +121,7 @@ public class SearchEngine
         ind.printStatistics();
 
         // Instantiate retriever and run
-        DocumentProcessor docProcessor = new SimpleProcessor();
+        DocumentProcessor docProcessor = new HtmlProcessor(pathToStopWords); // TODO
         RetrievalModel cosine = new Cosine();
         Interactive inter = new Interactive(cosine, ind, docProcessor);
         inter.run();
