@@ -3,6 +3,9 @@
 
 package ti;
 
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
+import org.jsoup.nodes.Element;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -15,7 +18,7 @@ import java.util.StringTokenizer;
  * A processor to extract terms from HTML documents.
  */
 public class HtmlProcessor implements DocumentProcessor {
-	HashSet<String> stopwords = null;
+	HashSet<String> stopwords = new HashSet<>();
 	// P2
 
 	/**
@@ -43,12 +46,22 @@ public class HtmlProcessor implements DocumentProcessor {
 	/**
 	 * {@inheritDoc}
 	 */
-	public Tuple<String, String> parse(String html)
-	{
+	public Tuple<String, String> parse(String html) {
 		// P2
 		// Parse document
+        Document doc_html = Jsoup.parse(html);
+        String title = doc_html.title();
+        String body = "";
+        try{
+			body = doc_html.body().text();
+		}
+        catch (Exception e){
+        	body = "";
+		}
 
-		return null; // Return title and body separately
+        Tuple<String, String> result = new Tuple<String, String>(title, body);
+
+		return result; // Return title and body separately
 	}
 
 	/**
@@ -80,7 +93,7 @@ public class HtmlProcessor implements DocumentProcessor {
 	 * @param text the text to tokenize.
 	 * @return the list of tokens.
 	 */
-	protected ArrayList<String> tokenize(String text)
+	protected ArrayList<String> tokenize(String text) // TODO: Mirar si està fent bé per nums i símbols
 	{
 		ArrayList<String> tokens = new ArrayList<>();
 		StringTokenizer tokenizer = new StringTokenizer(text, ",");
