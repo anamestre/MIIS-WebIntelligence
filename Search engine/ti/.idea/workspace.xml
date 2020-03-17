@@ -26,7 +26,43 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/JSOUP/jsoup-1.13.1.jar!/" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RunManager" selected="Application.batch">
+    <configuration name="batch" type="Application" factoryName="Application">
+      <output_file path="2011_simple.run" is_save="true" />
+      <option name="MAIN_CLASS_NAME" value="ti.SearchEngine" />
+      <module name="ti-2020" />
+      <option name="PROGRAM_PARAMETERS" value="batch 2011-myIndex 2011-topics.xml &gt; 2011.run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="index" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="ti.SearchEngine" />
+      <module name="ti-2020" />
+      <option name="PROGRAM_PARAMETERS" value="index 2011-myIndex 2011-documents stop-words.txt" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="interactive" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="ti.SearchEngine" />
+      <module name="ti-2020" />
+      <option name="PROGRAM_PARAMETERS" value="interactive 2011-myIndex" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.index" />
+      <item itemvalue="Application.interactive" />
+      <item itemvalue="Application.batch" />
+    </list>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -42,9 +78,47 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582725489378">
+    <state x="191" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1584460805149">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="191" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1584460805149" />
+    <state x="306" y="126" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1584013995792" />
+    <state x="498" y="196" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1584013660501">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1582725489378" />
+    <state x="498" y="196" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1536.824@0.0.1536.824" timestamp="1584013660501" />
+    <state x="501" y="154" key="FileChooserDialogImpl" timestamp="1583947162568">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="501" y="154" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1583947162568" />
+    <state width="1493" height="267" key="GridCell.Tab.0.bottom" timestamp="1584027433851">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="267" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1584027433851" />
+    <state width="1493" height="267" key="GridCell.Tab.0.center" timestamp="1584027433851">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="267" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1584027433851" />
+    <state width="1493" height="267" key="GridCell.Tab.0.left" timestamp="1584027433851">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="267" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1584027433851" />
+    <state width="1493" height="267" key="GridCell.Tab.0.right" timestamp="1584027433851">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="267" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1584027433851" />
+    <state x="277" y="0" key="SettingsEditor" timestamp="1583947168212">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="277" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1583947168212" />
+    <state x="388" y="195" key="com.intellij.ide.util.TipDialog" timestamp="1584460375233">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="388" y="195" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1584460375233" />
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1583946435925" />
+    <state x="462" y="10" width="611" height="804" key="find.popup" timestamp="1584012651140">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="462" y="10" width="611" height="804" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1584012651140" />
   </component>
 </project>
