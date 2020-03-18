@@ -1,0 +1,63 @@
+<topiclist>
+	<topic id="2011-001">
+	   <title>Who is the father of Claire in Modern Family?</title>
+		<relevance>
+			<level value="2">
+			the document must explicitly state that the father of Claire is Jay Pridjet and he has 70. It is not sufficient if they indicate his name.
+			</level>
+			<level value="1">
+	      	 the document may contain information regarding the pridjet family, Pritchett's Closets and Blinds CEO or
+			 haley's grandfather, but it does not explicitly say the name. </level>
+			<level value="0">
+			the document is not related to him. It may still be related to Modern Family, but
+			not to the name of the father. </level>
+		</relevance> 
+	</topic>
+	<topic id="2011-002">
+	   <title>How many total viewers has the season 10 of Modern Family?</title>
+	   <relevance>
+			<level value="2">
+			the document must have the concrete number of total views for the season 10
+			</level>
+			<level value="1">
+			       the document may have an aproximate number of views for season 10, or a global statistical number of the concrete season 
+			</level>
+			<level value="0">
+			       The document contains a global number for the entire tv show, regarding all seasons. </level>
+		</relevance> </topic>
+	<topic id="2011-003">
+	   <title>What is the  name of the actress who plays Haley?</title>
+	   <relevance>
+			<level value="2">
+			the document must explicitly name Sarah Hyland.
+			</level>
+			<level value="1">
+			the document may talk about the age of the actress, or she is native New Yorker, but it does not state the name Sarah Hyland.
+			</level>
+			<level value="0">
+			the document is related to the Modern Family tv show, but not even a mention of Haley or Sarah. </level>
+			</relevance> </topic>
+	<topic id="2011-004">
+	   <title>In season 8, how much costs per episode?</title>
+	   <relevance>
+			<level value="2">
+			the document must list or discuss at least a concrete value for season 8, and $350,000 should appear.
+			</level>
+			<level value="1">
+			       the document lists or discusses a range of values, and the interval should inclide $350,000. </level>
+			<level value="0">
+			       the document contains information about the money spent but not for any concrete season. </level>
+	   </relevance>
+	  </topic>
+	<topic id="2011-005">
+		<title>Who is the ABC actual Entertainment president?</title> <relevance>
+			<level value="2">
+			the document must explicitly mention Channing Dungey.
+			</level>
+			<level value="1">
+			        the document discusses different names related to ABC company. </level>
+			<level value="0">
+			        the document may contain information about companies related to ABC. </level>
+     </relevance>
+   </topic>
+</topiclist>

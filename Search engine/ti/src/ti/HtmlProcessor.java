@@ -58,6 +58,8 @@ public class HtmlProcessor implements DocumentProcessor {
         catch (Exception e){
         	body = "";
 		}
+        //System.out.println("TITLE: " + title);
+		//System.out.println("BODY: " + body);
 
         Tuple<String, String> result = new Tuple<String, String>(title, body);
 
@@ -93,10 +95,11 @@ public class HtmlProcessor implements DocumentProcessor {
 	 * @param text the text to tokenize.
 	 * @return the list of tokens.
 	 */
-	protected ArrayList<String> tokenize(String text) // TODO: Mirar si està fent bé per nums i símbols
+	protected ArrayList<String> tokenize(String text)
 	{
+		text = text.replaceAll("\\p{Punct}", "");
 		ArrayList<String> tokens = new ArrayList<>();
-		StringTokenizer tokenizer = new StringTokenizer(text, ",");
+		StringTokenizer tokenizer = new StringTokenizer(text);
 
 		// P2
 		while (tokenizer.hasMoreTokens()) {
@@ -137,6 +140,7 @@ public class HtmlProcessor implements DocumentProcessor {
 		for(char a : term.toCharArray()){
 			stemmer.add(a);
 		}
+		stemmer.stem();
 		return stemmer.toString();
 	}
 }
